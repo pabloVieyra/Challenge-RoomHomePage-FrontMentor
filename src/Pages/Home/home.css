@@ -1,0 +1,16 @@
+.container-img-text-img{
+    display: grid;
+    grid-template-columns: 25% 50% 25%;
+   
+}
+
+.texto{
+    font-size: calc(0.7em + 0.7vw);
+    padding: 10%;
+}
+
+.container-colum-colum{
+    display: grid;
+    grid-template-columns: 60% 40%;
+    object-fit: 'cover'
+}
