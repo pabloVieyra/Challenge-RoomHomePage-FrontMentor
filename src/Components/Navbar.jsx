@@ -9,6 +9,7 @@ const Navbar = () => {
       <button style={{cursor: 'pointer' ,background: 'none',border:'none',color:'white',marginLeft:'3%',fontSize: 'x-large'}}>about</button>
       <button style={{cursor: 'pointer' ,background: 'none',border:'none',color:'white',marginLeft:'3%',fontSize: 'x-large'}}>contact</button>
       
+      
     
     </div>
   );

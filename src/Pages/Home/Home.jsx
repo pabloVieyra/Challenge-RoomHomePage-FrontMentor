@@ -4,6 +4,11 @@ import image1 from "../../assets/images/desktop-image-hero-1.jpg"
 import image2 from "../../assets/images/image-about-dark.jpg"
 import image3 from "../../assets/images/image-about-light.jpg"
 import "./home.css"
+import icon from "../../assets/images/icon-arrow.svg"
+
+import icon2 from "../../assets/images/icon-angle-left.svg"
+import icon3 from "../../assets/images/icon-angle-right.svg"
+
 
 const Home = () => {
   return (
@@ -11,6 +16,7 @@ const Home = () => {
       <section className="container-colum-colum" style={{height: '80%'}}>
         <div >
           <Navbar></Navbar>
+          
        <img src={image1} style={{width: '100%',height: '100%'}} /> 
        </div>
        <div className="texto"> 
@@ -19,9 +25,20 @@ const Home = () => {
             Our experts combine form and function in bringing y
             our vision to life. Create a room in your own style with our collection
              and make your property a reflection of you and what you love.</h5>
-        <button style={{fontWeight: '400' ,letterSpacing: '0.5em',fontSize: 'smaller',cursor: 'pointer' ,background: 'none',border:'none'}}>SHOP NOW</button>
+             <button style={{fontWeight: '400' ,letterSpacing: '0.5em',fontSize: 'smaller',cursor: 'pointer' ,background: 'none',border:'none'}}>
+          SHOP NOW <img src={icon} style={{width:'60px'}}/>
+        </button>
        </div>
       </section>
+      <section style={{display:'table-row',position: 'absolute'}} >
+            <button style={{cursor: 'pointer' ,background: 'black',border:'0.1em solid black',padding:'5%',color: '#ffffff' }}>
+                    <img src={icon2} style={{width:'30px'}}/>
+            </button>
+            <button style={{cursor: 'pointer' ,background: 'black',border:'0.1em solid black',padding:'5%',color: '#ffffff'}}>
+                <img src={icon3} style={{width:'30px'}}/>
+            </button>
+   </section>
+
       <section className="container-img-text-img">
         <div>
           <img src={image2} style={{width: '100%',height: '85%'}}></img>
@@ -38,6 +55,8 @@ const Home = () => {
         <div>
           <img src={image3} style={{width: '100%',height: '85%'}}></img>
         </div>
+
+      
       </section>
     </div>
   );
