@@ -14,3 +14,8 @@
     grid-template-columns: 60% 40%;
     object-fit: 'cover'
 }
+
+.text-secondary{
+    color: #BDC3C7  ;
+    font-weight: 600;
+}
