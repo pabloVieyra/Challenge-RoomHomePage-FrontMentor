@@ -44,10 +44,10 @@ h1,
 h2,
 h3,
 h4 {
-  font-family: 'Spartan' !important;
+  font-family: 'Spartan' ,sans-serif !important;
 }
 p,
 h5,
 h6 {
-  font-family: 'Spartan' !important;
+  font-family: 'Spartan',sans-serif !important;
 }

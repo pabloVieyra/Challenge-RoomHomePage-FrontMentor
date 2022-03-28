@@ -1,25 +1,59 @@
-import React from "react";
+import React,{useState} from "react";
 import Navbar from "../../Components/Navbar";
-import image1 from "../../assets/images/desktop-image-hero-1.jpg"
+import imageInicio1 from "../../assets/images/desktop-image-hero-1.jpg"
 import image2 from "../../assets/images/image-about-dark.jpg"
 import image3 from "../../assets/images/image-about-light.jpg"
 import "./home.css"
 import icon from "../../assets/images/icon-arrow.svg"
-
 import icon2 from "../../assets/images/icon-angle-left.svg"
 import icon3 from "../../assets/images/icon-angle-right.svg"
 
 
 const Home = () => {
+ /*  const [current, setCurrent] = useState(0);
+  const length = photos.length;
+  
+
+  const OnclickLeft = () =>{
+          setCurrent(current === length - 1 ? 0 : current + 1);
+  }
+
+  const OnclickRigth = () =>{
+    setCurrent(current === length - 1 ? 0 : current + 1);
+  }
+
+  if (!Array.isArray(photos) || photos.length <= 0) {
+    return null;
+  } */
+ 
+
   return (
     <div>
       <section className="container-colum-colum" style={{height: '80%'}}>
         <div >
           <Navbar></Navbar>
+
+          <img style={{width: '100%',height: '100%'}}src={imageInicio1}></img>
           
-       <img src={image1} style={{width: '100%',height: '100%'}} /> 
+    {/*   {photos.map((slide, index) => {
+          return (
+            <div >
+              {index === current && (
+                <>
+                 
+                  <img
+                  style={{width: '100%',height: '100%'}}
+                    src={slide.image}
+                    
+                  ></img>
+                </>
+              )}
+            </div>
+          );
+        })} */}
+
        </div>
-       <div className="texto"> 
+       <div className="texto" style={{position: 'relative'}}  > 
         <h1 style={{fontWeight: '700'}}> Discover innovative ways to decorate</h1>
           <h5 className="text-secondary">We provide unmatched quality, comfort, and style for property owners across the country. 
             Our experts combine form and function in bringing y
@@ -28,16 +62,17 @@ const Home = () => {
              <button style={{fontWeight: '400' ,letterSpacing: '0.5em',fontSize: 'smaller',cursor: 'pointer' ,background: 'none',border:'none'}}>
           SHOP NOW <img src={icon} style={{width:'60px'}}/>
         </button>
-       </div>
-      </section>
-      <section style={{display:'table-row',position: 'absolute'}} >
-            <button style={{cursor: 'pointer' ,background: 'black',border:'0.1em solid black',padding:'5%',color: '#ffffff' }}>
+        <section style={{display:'flex',position: 'absolute',bottom: '0%',left:'0%'}} >
+            <button style={{cursor: 'pointer' ,background: 'black',border:'0.1em solid black',padding:'50%',color: '#ffffff' }}  >
                     <img src={icon2} style={{width:'30px'}}/>
             </button>
-            <button style={{cursor: 'pointer' ,background: 'black',border:'0.1em solid black',padding:'5%',color: '#ffffff'}}>
+            <button style={{cursor: 'pointer' ,background: 'black',border:'0.1em solid black',padding:'50%',color: '#ffffff'}}  >
                 <img src={icon3} style={{width:'30px'}}/>
             </button>
    </section>
+       </div>
+      </section>
+    
 
       <section className="container-img-text-img">
         <div>
